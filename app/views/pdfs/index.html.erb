@@ -1,0 +1,9 @@
+<h3>Listing Pdf's</h3>
+
+<table>
+  <% @pdfs.each do |pdf| %>
+    <tr>
+      <td><%= link_to pdf.name, 'http://localhost:3000/pdfviewer?file=http://localhost:3000' + pdf_path(pdf) %> </td>
+    </tr>
+  <% end %>
+</table>
